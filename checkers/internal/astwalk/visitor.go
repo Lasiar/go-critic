@@ -67,7 +67,7 @@ type CommentVisitor interface {
 type walkerEvents interface {
 	// EnterFile is called for every file that is about to be traversed.
 	// If false is returned, file is not visited.
-	EnterFile(*ast.File) bool
+		EnterFile(*ast.File) bool
 
 	// EnterFunc is called for every function declaration that is about
 	// to be traversed. If false is returned, function is not visited.
